@@ -1,0 +1,12 @@
+﻿@page
+@model pizzastore.Pages.ThankyouModel
+@{
+}
+@{ 
+    var imagepath = "./images/" + (Model.Im);
+}
+<div class="text-center">
+    <h1>Thankyou ordering</h1>
+    <h1>Customer name: @Model.pizzaname</h1>
+    <h1>Pizza size: @Model.pizzasize</h1>
+</div>

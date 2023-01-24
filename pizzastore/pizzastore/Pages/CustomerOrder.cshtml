@@ -1,0 +1,30 @@
+﻿@page
+@model pizzastore.Pages.CustomerOrderModel
+@{
+}
+<div class="text-center">
+    <h1>Create your own Pizza</h1>
+    <form method="post">
+        <input type="text"placeholder="Give your pizza a name" class="form-" asp-for="pizas.Pizzaname" /><br />
+        <input type="checkbox" value="Tomatto souce" asp-for="pizas.tomatosouce"/>Tomato Source<br />
+        <input type="checkbox" value="Cheese" asp-for="pizas.Cheese" />Cheese<br />
+        <input type="checkbox" value="Pepperoni" asp-for="pizas.pepperoni" >Pepperoni<br />
+        <input type="checkbox" value="Mushroom" asp-for="pizas.mushroom" />Mushroom<br />
+        <input type="checkbox" value="Tuna"asp-for="pizas.tuna" />Tuna<br />
+        <input type="checkbox"value="pineapple"asp-for="pizas.pineapple" />Pineapple<br />
+        <input type="checkbox"value="Ham" asp-for="pizas.ham" />Ham<br />
+        <input type="checkbox"value="Beef" asp-for="pizas.Beef"/>Beef<br />
+        <a class="btn btn-primary" asp-area="" asp-page="./Thankyou">Order My Pizza</a>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</div>

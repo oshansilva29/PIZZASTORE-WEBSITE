@@ -1,0 +1,35 @@
+﻿@page
+@model pizzastore.Pages.pizzasModel
+@{
+}
+<div class="text-center">
+    <h1>We Have Vareity Of Pizza </h1>
+    <div class="row">
+        @foreach(var item in Model.pizzamodel)
+        {
+            var imagepath = "./images/" + (item.Imagename + ".png");
+            <div class="col-4">
+                <img src="@imagepath" class="w-100 m-1" />
+                <h2>@item.Pizzaname</h2>
+                <h2>@item.Pizzasize</h2>
+                <h2>@item.Pizzaprice</h2>
+            </div>
+
+        }
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
